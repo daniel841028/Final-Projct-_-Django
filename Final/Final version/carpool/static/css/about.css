@@ -1,0 +1,10 @@
+body{
+    background-image: url(http://127.0.0.1:8000/static/images/campus.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+
+main{
+    width: 700px;
+  }
