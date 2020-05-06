@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Register Driver{% endblock %}
+{% block css %}<link href="{% static 'css/login.css' %}" rel="stylesheet"/>{% endblock %}
+
+
+{% block content %}
+
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: lightgrey;
+    }
+</style>
+
+<div class="page-header">
+    <h1>Registered Driver</h1>
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Email</th>
+                <th>Select</th>
+
+            </tr>
+            <tr>
+                {% for person in people %}
+                    <td> <a href="https://www.google.com/maps/search/{{ i.name }}">{{ i.name }}</a> </td>
+                    <td>{{ i.location }}</td>
+                    <td>{{ i.location }}</td>
+                    <td>{{ i.email }}</td>
+                    <td> <a href="/driver_list/" class="btn btn-lg btn-danger" style= 'margin-right: 50px; background-color: #23719e; border-color: #23719e'>Accept</a>
+                        <a href="/driver_display/" class="btn btn-lg btn-info" style='background-color: #bf3d3d; border-color: #bf3d3d'>Decline</a>
+                    </td>  
+                {% endblock %}
+            </tr>
+        </table>
+
+</body>
+<p>Note: Please confirm your ride carefully!</p>
+</html>
+
+
+
+
+
+
