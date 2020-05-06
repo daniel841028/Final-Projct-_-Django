@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}登录{% endblock %}
+
+
+{% block content %}
+
+      <main role="main" class="inner cover text-center">
+
+      <div class="card">
+  <h5 class="card-header">Important Message to users</h5>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">Dear users:<br/>
+            Welcome to JHUStudentRide! We are excited to have you in our
+            community. Since the crime rate in Balttimore is high, we hope 
+            to offer safe rides for JHU students. Only students and good drivers
+            will be admitted to this community. Therefore, we need to confirm your
+            identity before we offer any service to you. Please create a user account 
+            first (This might take only 3 minutes), and you can enjoy our service for 
+            free.</p>
+    <a href="#" class="btn btn-lg btn-danger">I am a Driver!</a>
+    <a href="#" class="btn btn-lg btn-info">Please drive me!</a>
+  </div>
+</div>
+
+      </main>
+
+
+    {% endblock %}
