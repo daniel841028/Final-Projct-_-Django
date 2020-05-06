@@ -1,5 +1,5 @@
-# Final-Projct-_-Django
-# JHUstudentRide_WEB_Final_Project
+
+# JHUstudentRide_Final_Project(WEB)
 Final project for Software Carpentry Class. We wrote a WEB in python to show our idea using Django.
 
 About JHUstudentRide:
@@ -20,7 +20,7 @@ How to use?
 
 
 
-(5)	(5)	On the other hand, user can see all offered rides in your manage webpage. To see the destination of your trip, please click on the address. The location will be shown on Google Map. Once users see the trip you want to take, you can contact the riders using the email riders offered.
+(5)	On the other hand, user can see all offered rides in your manage webpage. To see the destination of your trip, please click on the address. The location will be shown on Google Map. Once users see the trip you want to take, you can contact the riders using the email riders offered.
 
 (6)	This website is total free. Please enjoy our service!
 
@@ -44,7 +44,7 @@ https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6
 (6)	Codes for setting up tables, CSS, hyperlink, plug images and styling:
 https://www.w3schools.com/html/
 
-(7)	How to setup SQLite database:
+(7)	How to setup MySQL database:
 https://techwithtim.net/tutorials/django/user-registration/
 
 (8)	Uber, Lyft, Moqi mobile carshare app in Appstore

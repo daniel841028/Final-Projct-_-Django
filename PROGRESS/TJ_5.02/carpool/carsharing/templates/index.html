@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login{% endblock %}
+{% block css %}<link href="{% static 'css/index.css' %}" rel="stylesheet"/>{% endblock %}
+
+{% block content %}
+
+<main role="main" class="inner cover text-center">
+<div class='slogan'>
+      Welcome to JHUStudentRide! 
+</div>
+    <a href="/driver_list/" class="btn btn-lg btn-danger" style= 'margin-right: 50px; background-color: #23719e; border-color: #23719e'>I'm a Driver!</a>
+    <a href="/driver_display/" class="btn btn-lg btn-info" style='background-color: #bf3d3d; border-color: #bf3d3d'>Pick me up!</a>
+      </main>
+
+
+    {% endblock %}
