@@ -1,4 +1,4 @@
-# Final-Projct-_-Django
+
 # JHUstudentRide_WEB_Final_Project
 Final project for Software Carpentry Class. We wrote a WEB in python to show our idea using Django.
 
