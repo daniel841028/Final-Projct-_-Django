@@ -1,5 +1,5 @@
 
-# JHUstudentRide_WEB_Final_Project
+# JHUstudentRide_Final_Project(WEB)
 Final project for Software Carpentry Class. We wrote a WEB in python to show our idea using Django.
 
 About JHUstudentRide:
