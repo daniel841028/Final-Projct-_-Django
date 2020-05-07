@@ -1,0 +1,76 @@
+{% extends 'except_base.html' %}
+{% load static %}
+{% block title %}Register Driver{% endblock %}
+{% block css %}<link href="{% static 'css/login.css' %}" rel="stylesheet"/>{% endblock %}
+
+
+{% block content %}
+    <main role="main" class="inner cover">
+        <style>
+            table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+            
+            td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            }
+            
+            tr:nth-child(even) {
+            background-color: lightgrey;
+            }
+        </style>
+
+        <div class="page-header">
+            <h1 class="text-center">Registered Driver</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Departure time</th>
+                            <th>Departure address</th>
+                            <th>Destination address</th>
+                            <th>Email</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for i in registered_driver %}
+                        <tr>
+                            <td>{{ i.driver.name }}</td>
+                            <td>{{ i.time }}</td>
+                            <td><a href="https://www.google.com/maps/search/{{ i.departure }}">{{ i.departure }}</a></td>
+                            <td><a href="https://www.google.com/maps/search/{{ i.destination }}">{{ i.destination }}</a></td>
+                            <td>{{ i.driver.email }}</td>
+                            
+                            <td> 
+                            
+                            {% if i.driver.id == request.session.user_id  %}
+
+                            <form class='form-register' action="/driver_display/" method="post" >
+                                {% csrf_token %}
+                                <input name="id" type="hidden" value="{{ i.id }}"/>
+                                <button type="submit" class="cancel" style="background: rgb(202, 60, 60); color: white; border-radius: 4px; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);">cancel</button>
+                            </form>
+
+                            {% endif %}
+
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+    </main>
+{% endblock %}
+
+
+
+
+
+
+
+

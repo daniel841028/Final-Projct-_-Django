@@ -67,11 +67,12 @@ def register(request):
                     message = 'The email was registered！'
                     return render(request, 'register.html', locals())
 
-                new_user = models.User.objects.create()
-                new_user.name = name
-                new_user.password = hash_code(password1)
-                new_user.email = email
-                new_user.save()
+                new_user = models.User.objects.create(
+                    name = name,
+                    password = hash_code(password1),
+                    email = email
+                )
+                
                 return redirect('/login/')
     else:
         form = RegisterForm()
@@ -98,13 +99,16 @@ def driver_list(request):
 
     if request.method == "POST":
         form = DriverForm(request.POST)
+        time = request.POST.get('time')
+        print("isajodijaosidj", time)
         if form.is_valid():
+            print("isaj")
             time = form.cleaned_data['time']
             departure = form.cleaned_data['departure']
             destination = form.cleaned_data['destination']
             driver_id = request.session['user_id']
             user = models.User.objects.get(pk=driver_id)
-
+            # print(asjdiasojdi)
             new_user = models.DriverList.objects.create(
                 time=time,
                 departure=departure,
@@ -112,6 +116,10 @@ def driver_list(request):
                 driver=user,
             )
             return redirect('/driver_display/')
+        else:
+            print(form.errors)
+            print(form.non_field_errors)
+                
     else:
         form = DriverForm()
     return render(request, 'driver.html', locals())

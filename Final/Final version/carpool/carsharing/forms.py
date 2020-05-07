@@ -35,7 +35,7 @@ class RegisterForm(forms.Form):
 
 class DriverForm(forms.Form):
 
-    time = forms.DateTimeField(label="Time ( Departure )", widget=forms.DateTimeInput(
+    time = forms.CharField(label="Time ( Departure )", widget=forms.DateTimeInput(
         attrs={'class': 'form-control'}))
     departure = forms.CharField(label="Departure", max_length=256, widget=forms.TextInput(
         attrs={'class': 'form-control'}))
