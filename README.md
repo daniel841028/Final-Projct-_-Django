@@ -18,11 +18,19 @@ How to use?
 
 (4)	Drivers can add new trip by filling up the register for a trip form, including time, departure and destination. Then, drivers will see the registered trip shown in your manage webpage. If the route you offer does not exist anymore, please click on the cancel bottom. This trip will disappear from your manage page. (Note: you cannot cancel the trip if that is not register by you)
 
-
-
 (5)	On the other hand, user can see all offered rides in your manage webpage. To see the destination of your trip, please click on the address. The location will be shown on Google Map. Once users see the trip you want to take, you can contact the riders using the email riders offered.
 
 (6)	This website is total free. Please enjoy our service!
+
+How to setup this WEB:
+
+(1)
+
+(2)
+
+(3)
+
+(4)
 
 References:
 
