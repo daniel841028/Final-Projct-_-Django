@@ -32,9 +32,17 @@ We developed our website on Python 3.7.6. Please check your python version.
 
 (3) In your terminal please type: pip install PyMySQL
 
-(4) Then, type python manage.py runserver to run the surver
+(4) In your terminal please type: cd desktop
 
-(5) Last step type “http://127.0.0.1:8000/index/”  in your browser. Then you can run our WEB
+(5) In your terminal please type: cd JHUstudentRide_Final_Project-WEB--master 2
+
+(6) In your terminal please type: cd Final
+
+(7) In your terminal please type: cd carpool
+
+(8) Then, type "python manage.py runserver" to run the surver
+
+(9) Last step type “http://127.0.0.1:8000/index/”  in your browser. Then you can run our WEB
 
 References:
 
