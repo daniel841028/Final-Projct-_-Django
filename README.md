@@ -24,13 +24,17 @@ How to use?
 
 How to setup this WEB:
 
-(1)
+We developed our website on Python 3.7.6. Please check your python version.
 
-(2)
+(1) First we have to install some packages.
 
-(3)
+(2) In your terminal please type: pip install django
 
-(4)
+(3) In your terminal please type: pip install PyMySQL
+
+(4) Then, type python manage.py runserver to run the surver
+
+(5) Last step type “http://127.0.0.1:8000/index/”  in your browser. Then you can run our WEB
 
 References:
 
